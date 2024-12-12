@@ -1,11 +1,18 @@
 import "./App.css";
-import LandingPage from "./pages/LandingPage";
-import bg from "../public/bg.jpg";
+import Landing from "./pages/Landing";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AppLayout from "./layout/AppLayout";
+
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    children: [{ path: "/", element: <Landing /> }],
+  },
+]);
 function App() {
   return (
     <>
-      <img src={bg} alt="" className="fixed opacity-60 -z-10" />
-      <LandingPage />
+      <RouterProvider router={router} />
     </>
   );
 }
