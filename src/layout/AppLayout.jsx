@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import "../app.css";
+import "../App.css";
 import Header from "../components/Header";
 import bg from "../../public/bg.jpg";
 import { useEffect, useState } from "react";
@@ -15,10 +15,8 @@ const AppLayout = () => {
     img.onload = () => setLoading(false);
   }, []); // Run once on component mount
 
-  if(loading){
-    return(
-      <Loading/>
-    )
+  if (loading) {
+    return <Loading />;
   }
   return (
     <div>
@@ -27,7 +25,7 @@ const AppLayout = () => {
       <main className="min-h-screen container mx-auto">
         <Outlet />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
