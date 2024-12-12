@@ -20,9 +20,9 @@ const AppLayout = () => {
   }
   return (
     <div>
-      <img src={bg} className="fixed -z-10 opacity-60"></img>
+      <img src={bg} className="fixed h-screen w-full -z-10 opacity-60"></img>
       <Header />
-      <main className="min-h-screen container mx-auto">
+      <main className="container mx-auto">
         <Outlet />
       </main>
       <Footer />

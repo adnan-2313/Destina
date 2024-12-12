@@ -3,7 +3,7 @@ import logo from "../../public/Logo.png";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="bottom-0 w-full font-semibold text-[#a58154] border-t border-[#a58154] px-12  sm:px-24 py-10 2xl:max-w-7xl mx-auto">
+    <footer className="bottom-0 w-full font-semibold text-[#a58154] border-t border-[#a58154] px-2 sm:px-24 py-10 2xl:max-w-7xl mx-auto">
       <div className="flex flex-col sm:flex-row items-center justify-between border-b border-[#a58154] pb-6">
         <div className="flex flex-col max-sm:text-center gap-6 justify-center">
           <img src={logo} alt="" className="w-36 max-sm:mx-auto" />
@@ -16,8 +16,12 @@ const Footer = () => {
             <Copyright /> {year} Destina : AI Planner built by Adnan Khan
           </span>
           <span className="max-sm:text-center">
-            Source code available at{" "} 
-            <a href="https://github.com/adnan-2313/Destina" className="underline" target="_Destina">
+            Source code available at{" "}
+            <a
+              href="https://github.com/adnan-2313/Destina"
+              className="underline"
+              target="_Destina"
+            >
               github/Destina
             </a>
           </span>
